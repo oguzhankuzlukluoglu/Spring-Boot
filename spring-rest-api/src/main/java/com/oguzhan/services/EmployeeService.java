@@ -14,10 +14,7 @@ public class EmployeeService {
     private EmployeeRepository employeeRepository;
 
     public List<Employee> getAllEmployeeList() {
-
-        employeeRepository.getAllEmployeeList();
-
-        return null;
+        return employeeRepository.getAllEmployeeList();
     }
 
 }
