@@ -51,4 +51,22 @@ public class EmployeeRepository {
         }
         return employeeWithParams;
     }
+    public Employee saveEmployee(Employee newEmployee) {
+        employeeList.add(newEmployee);
+        return newEmployee;
+    }
+    public Boolean deleteEmployee(String id) {
+        Employee deleteEmployee = null;
+        for (Employee employee : employeeList){
+            if (id.equals(employee.getId())) {
+                deleteEmployee = employee;
+                break;
+            }
+        }
+        if(deleteEmployee == null) {
+            return false;
+        }
+        employeeList.remove(deleteEmployee);
+        return true;
+    }
 }
