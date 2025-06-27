@@ -8,6 +8,8 @@ target/
 ### STS ###
 .apt_generated
 .classpath
+.env
+application-secret.properties
 .factorypath
 .project
 .settings
